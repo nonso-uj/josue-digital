@@ -2,7 +2,7 @@ import { SyntheticEvent, useState } from 'react'
 import { Link } from 'react-router';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import * as emailjs from "@emailjs/browser"
+// import * as emailjs from "@emailjs/browser"
 import PageLayout from '../components/PageLayout';
 import { Alert, AlertColor, Snackbar, SnackbarCloseReason } from '@mui/material';
 
@@ -29,7 +29,7 @@ const ContactPage = () => {
     if (reason === 'clickaway') {
       return;
     }
-
+    console.log(event);
     setOpen(false);
   };
   
@@ -52,7 +52,8 @@ const ContactPage = () => {
       message: Yup.string()
         .required('Required'),
     }),
-    onSubmit: (values, { resetForm }) => {
+    onSubmit: (values) => {
+    // onSubmit: (values, { resetForm }) => {
       setLoading(true)
 
       console.log('values= ', values)
