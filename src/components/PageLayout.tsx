@@ -2,6 +2,7 @@ import { Link } from 'react-router'
 import Navbar from './Navbar'
 import { ABOUT_URL, ACADEMY_URL, CONTACT_URL, MARKETING_URL, SALES_URL, SERVICES_URL } from '../utils/Routes'
 import { useEffect } from 'react';
+// import Preloader from './Preloader';
 
 const PageLayout = ({ children }: any) => {
 
@@ -12,6 +13,7 @@ const PageLayout = ({ children }: any) => {
   return (
     <div className="page-wrapper">
             
+        {/* <Preloader /> */}
         <div className="preloader">
             <div className="custom-loader"></div>
         </div>

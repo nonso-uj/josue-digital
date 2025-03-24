@@ -2,7 +2,7 @@ import { SyntheticEvent, useState } from 'react'
 import { Link } from 'react-router';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-// import * as emailjs from "@emailjs/browser"
+import * as emailjs from "@emailjs/browser"
 import PageLayout from '../components/PageLayout';
 import { Alert, AlertColor, Snackbar, SnackbarCloseReason } from '@mui/material';
 
@@ -28,8 +28,8 @@ const ContactPage = () => {
   ) => {
     if (reason === 'clickaway') {
       return;
+      () => {event}
     }
-    console.log(event);
     setOpen(false);
   };
   
@@ -52,36 +52,34 @@ const ContactPage = () => {
       message: Yup.string()
         .required('Required'),
     }),
-    onSubmit: (values) => {
-    // onSubmit: (values, { resetForm }) => {
+    onSubmit: (values, { resetForm }) => {
       setLoading(true)
 
-      console.log('values= ', values)
       setToastMessage({severity: "success", message: "Your message has been sent."})
       setOpen(true);
       
-      // emailjs.init({
-      //   publicKey: '1y5t7W-3fdC3xEFji',
-      //   blockHeadless: true,
-      //   limitRate: {
-      //     id: 'app',
-      //     throttle: 10000,
-      //   },
-      // });
+      emailjs.init({
+        publicKey: '1y5t7W-3fdC3xEFji',
+        blockHeadless: true,
+        limitRate: {
+          id: 'app',
+          throttle: 10000,
+        },
+      });
 
-      // emailjs.send('service_jse0iq9', 'contact_form', values).then(
-      //   (response) => {
-      //     setToastMessage({severity: "success", message: "Your message has been sent." + response})
-      //     setOpen(true);
-      //     resetForm();
-      //     setLoading(false)
-      //   },
-      //   (error) => {
-      //     setToastMessage({severity: "error", message: "Uh oh! Something went wrong, please check your connection and try again!" + error})
-      //     setOpen(true);
-      //     setLoading(false)
-      //   },
-      // );
+      emailjs.send('service_jse0iq9', 'template_zfr345k', values).then(
+        (response) => {
+          setToastMessage({severity: "success", message: "Your message has been sent." + response})
+          setOpen(true);
+          resetForm();
+          setLoading(false)
+        },
+        (error) => {
+          setToastMessage({severity: "error", message: "Uh oh! Something went wrong, please check your connection and try again!" + error})
+          setOpen(true);
+          setLoading(false)
+        },
+      );
     },
   });
 
