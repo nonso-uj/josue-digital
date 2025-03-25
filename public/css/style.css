@@ -58,9 +58,9 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   --base-color: #838694;
-  --heading-color: #1b1f2e;
-  --primary-color: #30f0b6;
-  --secondary-color: #674df3;
+  --heading-color: #000000;
+  --primary-color: #854836;
+  --secondary-color: #FFB22C;
   --lighter-color: #f7f7f9;
   --border-color: rgba(21, 16, 31, 0.1); }
 
@@ -5127,12 +5127,12 @@ h6, .h6 {
   .service-item-six h4 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #30f0b6; }
+    color: #000000; }
 
   .service-item-six:hover {
     background: white;
     background-color: white;
-    color: var(--secondary-color);
+    color: #000000;
     -webkit-box-shadow: 10px 0 60px rgba(102, 83, 232, 0.15);
     box-shadow: 10px 0 60px rgba(102, 83, 232, 0.15); }
 
