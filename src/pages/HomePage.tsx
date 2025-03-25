@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router'
 import PageLayout from '../components/PageLayout'
-import { ABOUT_URL, ACADEMY_URL, MARKETING_URL, SALES_URL } from '../utils/Routes'
+import { ABOUT_URL } from '../utils/Routes'
 import TestimonialSlider from '../components/TestimonialSlider'
 import MainSlider from '../components/MainSlider'
 import ServiceThreeSlider from '../components/ServiceThreeSlider'
