@@ -68,14 +68,14 @@ const ContactPage = () => {
       });
 
       emailjs.send('service_jse0iq9', 'template_zfr345k', values).then(
-        (response) => {
-          setToastMessage({severity: "success", message: "Your message has been sent." + response})
+        () => {
+          setToastMessage({severity: "success", message: "Your message has been sent."})
           setOpen(true);
           resetForm();
           setLoading(false)
         },
-        (error) => {
-          setToastMessage({severity: "error", message: "Uh oh! Something went wrong, please check your connection and try again!" + error})
+        () => {
+          setToastMessage({severity: "error", message: "Uh oh! Something went wrong, please check your connection and try again!"})
           setOpen(true);
           setLoading(false)
         },
