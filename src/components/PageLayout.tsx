@@ -1,22 +1,33 @@
 import { Link } from 'react-router'
 import Navbar from './Navbar'
 import { ABOUT_URL, ACADEMY_URL, CONTACT_URL, MARKETING_URL, SALES_URL, SERVICES_URL } from '../utils/Routes'
-import { useEffect } from 'react';
-// import Preloader from './Preloader';
+import { useEffect, useState } from 'react';
+import Preloader from './Preloader';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PageLayout = ({ children }: any) => {
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
+    
+    useEffect(() => {
+        if (!loading) {
+            AOS.init({
+            duration: 800,
+            once: true, // Animation only happens once
+            disable: window.innerWidth < 768 // Disable on mobile if needed
+            });
+            AOS.refresh();
+        }
+    }, [loading]);
 
   return (
     <div className="page-wrapper">
             
-        {/* <Preloader /> */}
-        <div className="preloader">
-            <div className="custom-loader"></div>
-        </div>
+        <Preloader loading={loading} setLoading={setLoading} />
         
         <Navbar />
         
@@ -47,7 +58,7 @@ const PageLayout = ({ children }: any) => {
             <div className="container">
                 <div className="row medium-gap">
                     <div className="col-xl-4 col-sm-6">
-                        <div className="footer-widget widget_about wow fadeInUp delay-0-2s">
+                        <div className="footer-widget widget_about " data-aos="fade-up" data-aos-delay="200">
                             <div className="footer-logo mb-30">
                                 <Link to={'/'}>
                                     <h3 className="text-white my-auto">Josue Digital</h3>
@@ -58,7 +69,7 @@ const PageLayout = ({ children }: any) => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-sm-6 order-xl-2">
-                        <div className="footer-widget widget_newsletter wow fadeInUp delay-0-6s">
+                        <div className="footer-widget widget_newsletter " data-aos="fade-up" data-aos-delay="600">
                             <h4 className="footer-title">Newsletter</h4>
                             <p>Sed perspiciatis unde omnste natus error voluptatem accusante.</p>
                             <form action="#">
@@ -78,7 +89,7 @@ const PageLayout = ({ children }: any) => {
                     <div className="col-xl-4">
                         <div className="row">
                             <div className="col-md-6 col-6 col-small">
-                                <div className="footer-widget widget_nav_menu wow fadeInUp delay-0-3s">
+                                <div className="footer-widget widget_nav_menu " data-aos="fade-up" data-aos-delay="300">
                                     <h4 className="footer-title">Quick Links</h4>
                                     <ul className="list-style-two">
                                         <li><Link to={ABOUT_URL}>About Company</Link></li>
@@ -89,7 +100,7 @@ const PageLayout = ({ children }: any) => {
                                 </div>
                             </div>
                             <div className="col-md-6 col-6 col-small">
-                                <div className="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
+                                <div className="footer-widget widget_nav_menu " data-aos="fade-up" data-aos-delay="400">
                                     <h4 className="footer-title">Services</h4>
                                     <ul className="list-style-two">
                                         <li><Link to={ACADEMY_URL}>Online Marketing Academy</Link></li>

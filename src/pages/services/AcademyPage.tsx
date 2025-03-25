@@ -9,9 +9,9 @@ const AcademyPage = () => {
       <section className="page-banner-area bgs-cover py-135 rpy-100" style={{backgroundImage: "url('/images/background/academy-banner.jpg')"}}>
         <div className="container">
             <div className="banner-inner text-white text-center">
-                <h1 className="page-title wow fadeInUp delay-0-2s">Online Marketing Academy</h1>
+                <h1 className="page-title " data-aos="fade-up" data-aos-delay="200">Online Marketing Academy</h1>
                 <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb justify-content-center mb-5 wow fadeInUp delay-0-4s">
+                    <ol className="breadcrumb justify-content-center mb-5 " data-aos="fade-up" data-aos-delay="400">
                         <li className="breadcrumb-item"><Link to={SERVICES_URL}>services</Link></li>
                         <li className="breadcrumb-item active">Online Marketing Academy</li>
                     </ol>
@@ -55,7 +55,7 @@ const AcademyPage = () => {
                               </div>
                           </div>
 
-                          <div className="image my-40 wow fadeInUp delay-0-2s">
+                          <div className="image my-40 " data-aos="fade-up" data-aos-delay="200">
                               <img src="/images/services/service-page12.jpg" alt="Service Details" />
                           </div>
                           {/* <!-- <div className="row">
@@ -86,7 +86,7 @@ const AcademyPage = () => {
                           <p>If you've just completed NYSC and want a tech career, our specialized courses provide practical knowledge, ensuring you stand out to employers. Dive into social media marketing, SEO, and content creation, gaining a competitive edge.</p>
                           <p>University students, complement your studies with our practical courses. Developed by industry professionals, our program bridges theory and real-world application, preparing you with skills demanded by employers. Network, collaborate, and grow with our vibrant community.</p>
                           <p>Join us and unlock a future filled with endless tech possibilities. Enroll in our Online Marketing Academy now!</p>
-                          {/* <!-- <div className="faq-accordion pt-20 wow fadeInUp delay-0-2s" id="faq-accordion">
+                          {/* <!-- <div className="faq-accordion pt-20 " data-aos="fade-up" data-aos-delay="200" id="faq-accordion">
                               <div className="accordion-item">
                                   <h5 className="accordion-header">
                                       <button className="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">

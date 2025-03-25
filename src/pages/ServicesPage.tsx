@@ -8,9 +8,9 @@ const ServicesPage = () => {
       <section className="page-banner-area bgs-cover py-135 rpy-100" style={{backgroundImage: "url('/images/background/service-bg.jpg')"}}>
         <div className="container">
             <div className="banner-inner text-white text-center">
-                <h1 className="page-title wow fadeInUp delay-0-2s">Our Services</h1>
+                <h1 className="page-title " data-aos="fade-up" data-aos-delay="200">Our Services</h1>
                 <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb justify-content-center mb-5 wow fadeInUp delay-0-4s">
+                    <ol className="breadcrumb justify-content-center mb-5 " data-aos="fade-up" data-aos-delay="400">
                         <li className="breadcrumb-item"><Link to={"/"}>home</Link></li>
                         <li className="breadcrumb-item active">Services</li>
                     </ol>
@@ -22,12 +22,12 @@ const ServicesPage = () => {
     
       <section className="what-we-provide overflow-hidden py-130 rpy-100 rel z-1">
         <div className="container">
-            <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
+            <div className="section-title text-center mb-55 " data-aos="fade-up" data-aos-delay="200">
                 <span className="sub-title mb-10">What We Provide</span>
                 <h2>Digital Core Services</h2>
             </div>
             <div className="row">
-                <div className="col-lg-4 service-item-three wow fadeInUp delay-0-2s">
+                <div className="col-lg-4 service-item-three " data-aos="fade-up" data-aos-delay="200">
                     <div className="image">
                         <img src="/images/services/service-page1.jpg" alt="Service" />
                         <Link className="plus" to="/images/services/service-page1.jpg"><i className="fal fa-plus"></i></Link>
@@ -44,7 +44,7 @@ const ServicesPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4 service-item-three wow fadeInUp delay-0-4s">
+                <div className="col-lg-4 service-item-three " data-aos="fade-up" data-aos-delay="400">
                     <div className="image">
                         <img src="/images/services/service-page2.jpg" alt="Service" />
                         <Link className="plus" to="/images/services/service-page2.jpg"><i className="fal fa-plus"></i></Link>
@@ -61,7 +61,7 @@ const ServicesPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4 service-item-three wow fadeInUp delay-0-6s">
+                <div className="col-lg-4 service-item-three " data-aos="fade-up" data-aos-delay="600">
                     <div className="image">
                         <img src="/images/services/service-page3.jpg" alt="Service" />
                         <Link className="plus" to={"/images/services/service-page3.jpg"}><i className="fal fa-plus"></i></Link>

@@ -9,9 +9,9 @@ const MarketingPage = () => {
       <section className="page-banner-area bgs-cover py-135 rpy-100" style={{backgroundImage: "url('/images/services/digital.jpg')"}}>
             <div className="container">
                 <div className="banner-inner text-white text-center">
-                    <h1 className="page-title wow fadeInUp delay-0-2s">Digital Marketing Services</h1>
+                    <h1 className="page-title " data-aos="fade-up" data-aos-delay="200">Digital Marketing Services</h1>
                     <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb justify-content-center mb-5 wow fadeInUp delay-0-4s">
+                        <ol className="breadcrumb justify-content-center mb-5 " data-aos="fade-up" data-aos-delay="400">
                             <li className="breadcrumb-item"><Link to={SERVICES_URL}>services</Link></li>
                             <li className="breadcrumb-item active">Digital Marketing Services</li>
                         </ol>
