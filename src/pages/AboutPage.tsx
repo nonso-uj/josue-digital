@@ -1,6 +1,7 @@
 import PageLayout from '../components/PageLayout'
 import { Link } from 'react-router'
 import { CONTACT_URL } from '../utils/Routes'
+import TestimonialSlider from '../components/TestimonialSlider'
 
 const AboutPage = () => {
   return (
@@ -8,9 +9,9 @@ const AboutPage = () => {
         <section className="page-banner-area bgs-cover py-135 rpy-100" style={{backgroundImage: "url('/images/background/about-banner.jpg')"}}>
             <div className="container">
                 <div className="banner-inner text-white text-center">
-                    <h1 className="page-title wow fadeInUp delay-0-2s">About Us</h1>
+                    <h1 className="page-title " data-aos="fade-up" data-aos-delay="200">About Us</h1>
                     <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb justify-content-center mb-5 wow fadeInUp delay-0-4s">
+                        <ol className="breadcrumb justify-content-center mb-5 " data-aos="fade-up" data-aos-delay="400">
                             <li className="breadcrumb-item"><Link to={"/"}>home</Link></li>
                             <li className="breadcrumb-item active">About Us</li>
                         </ol>
@@ -75,21 +76,21 @@ const AboutPage = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
-                        <div className="service-item-six wow fadeInUp delay-0-2s">
+                        <div className="service-item-six " data-aos="fade-up" data-aos-delay="200">
                             <div className="icon"><i className="flaticon-agile"></i></div>
                             <h4>Comprehensive Services</h4>
                             <p>We offer a comprehensive range of services, including SEO/SEM, growth marketing, content creation, social media management, and website design. Our holistic approach ensures that all aspects of your digital presence are carefully crafted and integrated for maximum impact</p>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
-                        <div className="service-item-six wow fadeInUp delay-0-4s">
+                        <div className="service-item-six " data-aos="fade-up" data-aos-delay="400">
                             <div className="icon"><i className="flaticon-mission"></i></div>
                             <h4>Innovative Solutions</h4>
                             <p>Our agency stays ahead of industry trends, offering innovative solutions to keep your brand at the forefront of the digital landscape. From cutting-edge techniques to creative campaigns, we constantly strive to provide fresh and effective marketing approaches.</p>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
-                        <div className="service-item-six wow fadeInUp delay-0-6s">
+                        <div className="service-item-six " data-aos="fade-up" data-aos-delay="600">
                             <div className="icon"><i className="flaticon-mission-1"></i></div>
                             <h4>Transparent Communication</h4>
                             <p>Transparency is key in our interactions. We maintain open lines of communication, ensuring that our clients are informed at every step of the process. Transparent reporting and clear insights empower our clients to make informed decisions about their digital marketing initiatives.</p>
@@ -102,13 +103,13 @@ const AboutPage = () => {
         
         {/* <!-- <section className="team-area-two rpt-100 pb-100 rpb-70 rel z-1">
             <div className="container">
-                <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+                <div className="section-title text-center mb-60 " data-aos="fade-up" data-aos-delay="200">
                     <span className="sub-title mb-15">Team Member</span>
                     <h2>Amazing Team Members</h2>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="team-member style-two wow fadeInUp delay-0-2s">
+                        <div className="team-member style-two " data-aos="fade-up" data-aos-delay="200">
                             <img src="/images/team/member1.jpg" alt="Team">
                             <h4>Johnathan P. Bailey</h4>
                             <span className="designation">UX/UI Designer</span>
@@ -121,7 +122,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="team-member style-two wow fadeInUp delay-0-4s">
+                        <div className="team-member style-two " data-aos="fade-up" data-aos-delay="400">
                             <img src="/images/team/member2.jpg" alt="Team">
                             <h4>Mark M. Hughes</h4>
                             <span className="designation">Web Developer</span>
@@ -134,7 +135,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="team-member style-two wow fadeInUp delay-0-6s">
+                        <div className="team-member style-two " data-aos="fade-up" data-aos-delay="600">
                             <img src="/images/team/member3.jpg" alt="Team">
                             <h4>Donald B. Mitchell</h4>
                             <span className="designation">Software Engineer</span>
@@ -147,7 +148,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="team-member style-two wow fadeInUp delay-0-8s">
+                        <div className="team-member style-two " data-aos="fade-up" data-aos-delay="800">
                             <img src="/images/team/member4.jpg" alt="Team">
                             <h4>Bennie N. Bannister</h4>
                             <span className="designation">Senior Consultant</span>
@@ -172,14 +173,14 @@ const AboutPage = () => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-8">
-                        <div className="section-title text-center mb-45 wow fadeInUp delay-0-2s">
+                        <div className="section-title text-center mb-45 " data-aos="fade-up" data-aos-delay="200">
                             <span className="sub-title mb-15">Why Choose Us</span>
                             <h2>Elevate Your Brand with Digital Impact!</h2>
                         </div>
                     </div>
                 </div>
                 <div className="why-choose-tab">
-                    <ul className="nav nav-pills nav-fill mb-80 rmb-50 wow fadeInUp delay-0-4s">
+                    <ul className="nav nav-pills nav-fill mb-80 rmb-50 " data-aos="fade-up" data-aos-delay="400">
                         <li className="nav-item">
                             <a className="nav-link active" data-bs-toggle="tab" href="#wc-tap1">
                                 <i className="flaticon-creativity"></i> <span>SEO/SEM</span>
@@ -327,95 +328,16 @@ const AboutPage = () => {
                             <h2>What Our Clients Say About Us</h2>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    {/* <div className="col-lg-4">
                         <div className="slider-arrow mb-25 text-lg-end">
                             <button className="testi-prev"><i className="far fa-angle-left"></i></button>
                             <button className="testi-next"><i className="far fa-angle-right"></i></button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-                <div className="testimonial-slider">
-                    <div className="testimonial-item wow fadeInUp delay-0-2s">
-                        <div className="image">
-                            <img src="/images/testimonials/testi-author1.jpg" alt="Author" />
-                        </div>
-                        <div className="content">
-                            <div className="testi-header">
-                                <h4>Excellent Works</h4>
-                                <div className="ratting">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                </div>
-                            </div>
-                            <div className="testi-text">
-                                Loved the work Josue Digital did with us last December. They trained our staff in content marketing, social media management and digital marketing. We had so much fun.
-                            </div>
-                            <div className="testi-footer">
-                                <div className="icon"><i className="flaticon-quotation"></i></div>
-                                <div className="title">
-                                    <h4>Adebayor Jessica</h4>
-                                    <span className="designation">Head of HR</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="testimonial-item wow fadeInUp delay-0-4s">
-                        <div className="image">
-                            <img src="/images/testimonials/testi-author1.jpg" alt="Author" />
-                        </div>
-                        <div className="content">
-                            <div className="testi-header">
-                                <h4>Exceptional Partnership</h4>
-                                <div className="ratting">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                </div>
-                            </div>
-                            <div className="testi-text">
-                                Josue Digital did an excellent work on our company startup strategy, brand management and digital marketing. I could not have asked for a better partner to work with.
-                            </div>
-                            <div className="testi-footer">
-                                <div className="icon"><i className="flaticon-quotation"></i></div>
-                                <div className="title">
-                                    <h4>Nurudeen Ali</h4>
-                                    <span className="designation">Founder</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="testimonial-item wow fadeInUp delay-0-6s">
-                        <div className="image">
-                            <img src="/images/testimonials/testi-author4.jpg" alt="Author" />
-                        </div>
-                        <div className="content">
-                            <div className="testi-header">
-                                <h4>Record Breakers</h4>
-                                <div className="ratting">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                </div>
-                            </div>
-                            <div className="testi-text">
-                                They sold 5000+ of our products in less than a month. I don't think we have reached those numbers before. We have been in business with them ever since
-                            </div>
-                            <div className="testi-footer">
-                                <div className="icon"><i className="flaticon-quotation"></i></div>
-                                <div className="title">
-                                    <h4>Morgan Maxwell</h4>
-                                    <span className="designation">Sales Lead</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div>
+                    <TestimonialSlider />
                 </div>
             </div>
         </section>
@@ -426,27 +348,27 @@ const AboutPage = () => {
                 <hr className="mb-75">
                 <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
                     <div className="col">
-                        <a href="contact.html" className="partner-item-two wow fadeInUp delay-0-3s">
+                        <a href="contact.html" className="partner-item-two " data-aos="fade-up" data-aos-delay="300">
                             <img src="/images/partners/partner1.png" alt="Partner">
                         </a>
                     </div>
                     <div className="col">
-                        <a href="contact.html" className="partner-item-two wow fadeInUp delay-0-4s">
+                        <a href="contact.html" className="partner-item-two " data-aos="fade-up" data-aos-delay="400">
                             <img src="/images/partners/partner2.png" alt="Partner">
                         </a>
                     </div>
                     <div className="col">
-                        <a href="contact.html" className="partner-item-two wow fadeInUp delay-0-5s">
+                        <a href="contact.html" className="partner-item-two " data-aos="fade-up" data-aos-delay="500">
                             <img src="/images/partners/partner3.png" alt="Partner">
                         </a>
                     </div>
                     <div className="col">
-                        <a href="contact.html" className="partner-item-two wow fadeInUp delay-0-6s">
+                        <a href="contact.html" className="partner-item-two " data-aos="fade-up" data-aos-delay="600">
                             <img src="/images/partners/partner4.png" alt="Partner">
                         </a>
                     </div>
                     <div className="col">
-                        <a href="contact.html" className="partner-item-two wow fadeInUp delay-0-7s">
+                        <a href="contact.html" className="partner-item-two " data-aos="fade-up" data-aos-delay="700">
                             <img src="/images/partners/partner5.png" alt="Partner">
                         </a>
                     </div>

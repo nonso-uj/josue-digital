@@ -1,38 +1,18 @@
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
 import PageLayout from '../components/PageLayout'
-import { ABOUT_URL, ACADEMY_URL, MARKETING_URL, SALES_URL, SERVICES_URL } from '../utils/Routes'
+import { ABOUT_URL, ACADEMY_URL, MARKETING_URL, SALES_URL } from '../utils/Routes'
+import TestimonialSlider from '../components/TestimonialSlider'
+import MainSlider from '../components/MainSlider'
+import ServiceThreeSlider from '../components/ServiceThreeSlider'
 
 const HomePage = () => {
+    const location = useLocation();
+
   return (
     <PageLayout>
       <section className="slider-area bgs-cover pt-185 pb-160" style={{backgroundImage: "url('/images/slider/slider-bg2.jpg')"}}>
           <div className="container">
-              <div className="main-slider-active">
-                  <div className="slider-item">
-                      <div className="slide-content text-white">
-                          <span className="sub-title">Your Success, Our Mission</span>
-                          {/* <!-- <span className="h2">We’re Digital</span> --> */}
-                          <h1>Growth Marketing</h1>
-                          <Link to={SERVICES_URL} className="theme-btn">Let’s Get Started <i className="fas fa-long-arrow-right"></i></Link>
-                      </div>
-                  </div>
-                  <div className="slider-item">
-                      <div className="slide-content text-white">
-                          <span className="sub-title">Your Success, Our Strategy</span>
-                          {/* <!-- <span className="h2">We’re Digital</span> --> */}
-                          <h1>Website and Brand Management</h1>
-                          <Link to={SERVICES_URL} className="theme-btn">Let’s Get Started <i className="fas fa-long-arrow-right"></i></Link>
-                      </div>
-                  </div>
-                  <div className="slider-item">
-                      <div className="slide-content text-white">
-                          <span className="sub-title">Turning Clicks into Customers</span>
-                          {/* <!-- <span className="h2">We’re Digital</span> --> */}
-                          <h1>Social Media Marketing</h1>
-                          <Link to={SERVICES_URL} className="theme-btn">Let’s Get Started <i className="fas fa-long-arrow-right"></i></Link>
-                      </div>
-                  </div>
-              </div>
+              <MainSlider />
           </div>
       </section>
       
@@ -40,7 +20,7 @@ const HomePage = () => {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-xl-3 col-lg-4 col-md-6">
-                    <div className="feature-item style-two mt-25 wow fadeInUp delay-0-2s">
+                    <div className="feature-item style-two mt-25 " data-aos="fade-up" data-aos-delay="200">
                         <div className="icon"><i className="flaticon-trust"></i></div>
                         <h4>Creative Innovators</h4>
                         <p>Unique ideas for engaging content and campaigns.</p>
@@ -56,7 +36,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="col-xl-3 col-lg-4 col-md-6">
-                    <div className="feature-item style-two mt-45 wow fadeInUp delay-0-2s">
+                    <div className="feature-item style-two mt-45 " data-aos="fade-up" data-aos-delay="200">
                         <div className="icon"><i className="flaticon-social-media"></i></div>
                         <h4>Conversion Focus</h4>
                         <p>Emphasis on turning visitors into customers.</p>
@@ -122,62 +102,12 @@ const HomePage = () => {
 
       <section className="what-we-provide rel z-1">
         <div className="container">
-            <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
+            <div className="section-title text-center mb-55 " data-aos="fade-up" data-aos-delay="200">
                 <span className="sub-title mb-10">What We Provide</span>
                 <h2>Digital Core Services</h2>
             </div>
             <div className="service-three-slider">
-                <div className="service-item-three wow fadeInUp delay-0-2s">
-                    <div className="image">
-                        <img src="/images/services/online.jpg" alt="Service" />
-                        <a className="plus" href="/images/services/service-three1.jpg"><i className="fal fa-plus"></i></a>
-                    </div>
-                    <div className="content">
-                        <div className="top-part">
-                            <span className="number">01</span>
-                            <div className="icon"><i className="flaticon-coding-1"></i></div>
-                            <h4><Link to={ACADEMY_URL}>ONLINE MARKETING ACADEMY</Link></h4>
-                        </div>
-                        <div className="bottom-part">
-                            <p>Unlock the power of digital marketing and content marketing with our comprehensive online courses.</p>
-                            <Link to={ACADEMY_URL} className="read-more">Read More <i className="far fa-arrow-right"></i></Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="service-item-three active wow fadeInUp delay-0-4s">
-                    <div className="image">
-                        <img src="/images/services/media.jpg" alt="Service" />
-                        <a className="plus" href="/images/services/service-three2.jpg"><i className="fal fa-plus"></i></a>
-                    </div>
-                    <div className="content">
-                        <div className="top-part">
-                            <span className="number">02</span>
-                            <div className="icon"><i className="flaticon-layers"></i></div>
-                            <h4><Link to={MARKETING_URL}>DIGITAL MEDIA SERVICES</Link></h4>
-                        </div>
-                        <div className="bottom-part">
-                            <p>We specialize in a range of digital marketing services to help you reach your target audience and achieve your business goals.</p>
-                            <Link to={MARKETING_URL} className="read-more">Read More <i className="far fa-arrow-right"></i></Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="service-item-three wow fadeInUp delay-0-6s">
-                    <div className="image">
-                        <img src="/images/services/analysis.jpg" alt="Service" />
-                        <a className="plus" href="/images/services/service-three3.jpg"><i className="fal fa-plus"></i></a>
-                    </div>
-                    <div className="content">
-                        <div className="top-part">
-                            <span className="number">03</span>
-                            <div className="icon"><i className="flaticon-cyber-security-1"></i></div>
-                            <h4><Link to={SALES_URL}>SALES AND LEAD GENERATION SOLUTIONS</Link></h4>
-                        </div>
-                        <div className="bottom-part">
-                            <p>Empower your business, unlock its potential today!</p>
-                            <Link to={SALES_URL} className="read-more">Read More <i className="far fa-arrow-right"></i></Link>
-                        </div>
-                    </div>
-                </div>
+                <ServiceThreeSlider />
             </div>
         </div>
       </section>
@@ -191,96 +121,18 @@ const HomePage = () => {
                       <h2>What Our Clients Say About Us</h2>
                   </div>
               </div>
-              <div className="col-lg-4">
+              {/* <div className="col-lg-4">
                   <div className="slider-arrow mb-25 text-lg-end">
                       <button className="testi-prev"><i className="far fa-angle-left"></i></button>
                       <button className="testi-next"><i className="far fa-angle-right"></i></button>
                   </div>
-              </div>
+              </div> */}
           </div>
-          <div className="testimonial-slider">
-              <div className="testimonial-item wow fadeInUp delay-0-2s">
-                  <div className="image">
-                      <img src="/images/testimonials/testi-author1.jpg" alt="Author" />
-                  </div>
-                  <div className="content">
-                      <div className="testi-header">
-                          <h4>Excellent Works</h4>
-                          <div className="ratting">
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                          </div>
-                      </div>
-                      <div className="testi-text">
-                          Loved the work Josue Digital did with us last December. They trained our staff in content marketing, social media management and digital marketing. We had so much fun.
-                      </div>
-                      <div className="testi-footer">
-                          <div className="icon"><i className="flaticon-quotation"></i></div>
-                          <div className="title">
-                              <h4>Adebayor Jessica</h4>
-                              <span className="designation">Head of HR</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div className="testimonial-item wow fadeInUp delay-0-4s">
-                  <div className="image">
-                      <img src="/images/testimonials/testi-author1.jpg" alt="Author" />
-                  </div>
-                  <div className="content">
-                      <div className="testi-header">
-                          <h4>Exceptional Partnership</h4>
-                          <div className="ratting">
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                          </div>
-                      </div>
-                      <div className="testi-text">
-                          Josue Digital did an excellent work on our company startup strategy, brand management and digital marketing. I could not have asked for a better partner to work with.
-                      </div>
-                      <div className="testi-footer">
-                          <div className="icon"><i className="flaticon-quotation"></i></div>
-                          <div className="title">
-                              <h4>Nurudeen Ali</h4>
-                              <span className="designation">Founder</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div className="testimonial-item wow fadeInUp delay-0-6s">
-                  <div className="image">
-                      <img src="/images/testimonials/testi-author4.jpg" alt="Author" />
-                  </div>
-                  <div className="content">
-                      <div className="testi-header">
-                          <h4>Record Breakers</h4>
-                          <div className="ratting">
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                          </div>
-                      </div>
-                      <div className="testi-text">
-                          They sold 5000+ of our products in less than a month. I don't think we have reached those numbers before. We have been in business with them ever since
-                      </div>
-                      <div className="testi-footer">
-                          <div className="icon"><i className="flaticon-quotation"></i></div>
-                          <div className="title">
-                              <h4>Morgan Maxwell</h4>
-                              <span className="designation">Sales Lead</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+          
+          <div>
+            <TestimonialSlider key={location.pathname} />
           </div>
+
         </div>
       </section>
     </PageLayout>

@@ -5,7 +5,7 @@ const SideBar = () => {
   return (
     <div className="col-lg-4">
       <div className="service-sidebar">
-          <div className="widget widget-category wow fadeInUp delay-0-2s">
+          <div className="widget widget-category " data-aos="fade-up" data-aos-delay="200">
               <h4 className="widget-title">Services Category</h4>
               <ul>
                   <li><Link to={ACADEMY_URL}>Online Marketing Academy</Link></li>
@@ -20,7 +20,7 @@ const SideBar = () => {
               <a href="tel:+2349040014613" className="number"><i className="fas fa-phone"></i> +234 0904 001 4613</a>
               <img className="bg-shape" src="/images/widgets/cta-bg-lines.png" alt="Shape" />
           </div>
-          {/* <!-- <div className="widget widget-download wow fadeInUp delay-0-2s">
+          {/* <!-- <div className="widget widget-download " data-aos="fade-up" data-aos-delay="200">
               <h4 className="widget-title">Download</h4>
               <ul>
                   <li><a href="#">Download pdf <i className="far fa-file-pdf"></i></a></li>

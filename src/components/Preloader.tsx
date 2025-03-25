@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router";
 
-const Preloader = () => {
-  const [loading, setLoading] = useState(true);
+const Preloader = ({ loading, setLoading }: any) => {
+  
   const location = useLocation();
 
   useEffect(() => {

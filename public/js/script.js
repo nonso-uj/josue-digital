@@ -207,300 +207,6 @@
                 navigateByImgClick: true,
             },
         });
-
-        
-        // ## Project Three Slider
-        if ($('.project-three-active').length) {
-            $('.project-three-active').slick({
-                dots: false,
-                infinite: true,
-                autoplay: false,
-                autoplaySpeed: 5000,
-                arrows: true,
-                centerMode: false,
-                speed: 1000,
-                variableWidth: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                prevArrow: '<button class="prev-arrow"><i class="fas fa-angle-left"></i></button>',
-                nextArrow: '<button class="next-arrow"><i class="fas fa-angle-right"></i></button>',
-                responsive: [
-                    {
-                        breakpoint: 1199,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
-            });
-        }
-         
-        
-        // ## Project Active
-       if ($('.project-active').length) {
-            $('.project-active').imagesLoaded(function () {
-                $(".project-active").isotope({
-                    itemSelector: '.item',
-                    percentPosition: true,
-                    masonry: {
-                        columnWidth: 1
-                    }
-                });
-            });
-        };
-        
-        
-        
-        // ## Project Slider
-        if ($('.project-slider-active').length) {
-            $('.project-slider-active').slick({
-                infinite: true,
-                arrows: true,
-                dots: false,
-                fade: true,
-                autoplay: true,
-                prevArrow: '<button class="prev-arrow"><i class="fas fa-angle-left"></i></button>',
-                nextArrow: '<button class="next-arrow"><i class="fas fa-angle-right"></i></button>',
-                autoplaySpeed: 5000,
-                pauseOnHover: false,
-                slidesToScroll: 1,
-                slidesToShow: 1,
-            });
-        }
-          
-        
-        
-        // ## Main Slider
-        if ($('.main-slider-active').length) {
-            $('.main-slider-active').slick({
-                infinite: true,
-                arrows: true,
-                dots: false,
-                fade: true,
-                autoplay: true,
-                prevArrow: '<button class="prev-arrow"><i class="fal fa-angle-left"></i></button>',
-                nextArrow: '<button class="next-arrow"><i class="fal fa-angle-right"></i></button>',
-                autoplaySpeed: 5000,
-                pauseOnHover: false,
-                slidesToScroll: 1,
-                slidesToShow: 1,
-            });
-        }
-          
-        
-        // ## Main Slider Two
-        if ($('.slider-two-active').length) {
-            $('.slider-two-active').slick({
-                infinite: true,
-                arrows: true,
-                dots: false,
-                fade: true,
-                autoplay: true,
-                prevArrow: '.prev-slider',
-                nextArrow: '.next-slider',
-                autoplaySpeed: 5000,
-                pauseOnHover: false,
-                slidesToScroll: 1,
-                slidesToShow: 1,
-            });
-        }
-          
-        
-        // ## Service Three Slider
-        if ($('.service-three-slider').length) {
-            $('.service-three-slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                speed: 400,
-                prevArrow: '<button class="slide-n-arrow prev-n-arrow"></button>',
-                nextArrow: '<button class="slide-n-arrow next-n-arrow"></button>',
-                dots: true,
-                focusOnSelect: true,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                responsive: [
-                    {
-                        breakpoint: 1300,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 1,
-                        }
-                    }
-                ]
-            });
-        }
-          
-        
-        // ## Services Five Active
-        if ($('.services-five-active').length) {
-            $('.services-five-active').slick({
-                dots: true,
-                infinite: true,
-                autoplay: false,
-                autoplaySpeed: 2000,
-                arrows: false,
-                speed: 1000,
-                focusOnSelect: false,
-                slidesToShow: 4,
-                slidesToScroll: 2,
-                responsive: [
-                    {
-                        breakpoint: 1600,
-                        settings: {
-                            slidesToShow: 3,
-                        }
-                    },
-                    {
-                        breakpoint: 1100,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
-            });
-        }
-        
-        
-        // ## Related Product Slider
-        if ($('.related-product-slider').length) {
-            $('.related-product-slider').slick({
-                dots: true,
-                infinite: true,
-                autoplay: false,
-                autoplaySpeed: 2000,
-                arrows: false,
-                speed: 1000,
-                focusOnSelect: false,
-                slidesToShow: 4,
-                slidesToScroll: 2,
-                responsive: [
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3,
-                        }
-                    },
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 575,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
-            });
-        }
-
-        
-        // ## Testimonial Slider
-        if ($('.testi-image-slider').length) {
-            $('.testi-image-slider').slick({
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                infinite: false,
-                speed: 400,
-                arrows: false,
-                focusOnSelect: true,
-                autoplay: false,
-                autoplaySpeed: 5000,
-                asNavFor: '.testi-content-slider',
-                responsive: [
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 4,
-                        }
-                    },
-                    {
-                        breakpoint: 375,
-                        settings: {
-                            slidesToShow: 3,
-                        }
-                    }
-                ]
-            });
-        }
-        
-        if ($('.testi-content-slider').length) {
-            $('.testi-content-slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: false,
-                speed: 400,
-                arrows: false,
-                autoplay: false,
-                autoplaySpeed: 5000,
-                asNavFor: '.testi-image-slider',
-            });
-        }
-        
-        
-        // ## Testimonial Two
-        if ($('.testimonial-slider').length) {
-            $('.testimonial-slider').slick({
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                speed: 400,
-                arrows: true,
-                dots: true,
-                focusOnSelect: true,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                prevArrow: '.testi-prev',
-                nextArrow: '.testi-next',
-                responsive: [
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 1,
-                        }
-                    }
-                ]
-            });
-        }
-        
-        
-        // ## Testimonial Three
-        if ($('.testimonial-three-slider').length) {
-            $('.testimonial-three-slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: false,
-                speed: 400,
-                arrows: false,
-                dots: true,
-                focusOnSelect: true,
-                autoplay: false,
-                autoplaySpeed: 5000,
-            });
-        }
         
         
          /* ## Fact Counter + Text Count - Our Success */
@@ -637,16 +343,16 @@
         
         
         // ## WOW Animation
-        if ($('.wow').length) {
-            var wow = new WOW({
-                boxClass: 'wow', // animated element css class (default is wow)
-                animateClass: 'animated', // animation css class (default is animated)
-                offset: 0, // distance to the element when triggering the animation (default is 0)
-                mobile: false, // trigger animations on mobile devices (default is true)
-                live: true // act on asynchronously loaded content (default is true)
-            });
-            wow.init();
-        }
+        // if ($('.wow').length) {
+        //     var wow = new WOW({
+        //         boxClass: 'wow', // animated element css class (default is wow)
+        //         animateClass: 'animated', // animation css class (default is animated)
+        //         offset: 0, // distance to the element when triggering the animation (default is 0)
+        //         mobile: false, // trigger animations on mobile devices (default is true)
+        //         live: true // act on asynchronously loaded content (default is true)
+        //     });
+        //     wow.init();
+        // }
         
  
     });
@@ -695,16 +401,16 @@
        When document is loaded, do
        ========================================================================== */
 
-    $(window).on('load', function () {
+    // $(window).on('load', function () {
 
-        // ## Preloader
-        function handlePreloader() {
-            if ($('.preloader').length) {
-                $('.preloader').delay(200).fadeOut(500);
-            }
-        }
-        handlePreloader();
+    //     // ## Preloader
+    //     function handlePreloader() {
+    //         if ($('.preloader').length) {
+    //             $('.preloader').delay(200).fadeOut(500);
+    //         }
+    //     }
+    //     handlePreloader();
         
-    });
+    // });
 
 })(window.jQuery);
