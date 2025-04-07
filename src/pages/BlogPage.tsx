@@ -77,7 +77,7 @@ const BlogPage = () => {
                             <>
                             {data?.length > 0 ? (
                               <>
-                              {data?.reverse()?.map(post => (
+                              {data?.map(post => (
                                 <div key={post.id} className="blog-standard-item wow fadeInUp delay-0-2s">
                                     <div className="image">
                                         <img src={post?.headerImage || "/images/new/blog-header-default.jpg"} alt="Blog" />
