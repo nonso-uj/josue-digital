@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { ABOUT_URL, CONTACT_URL, SERVICES_URL } from '../utils/Routes'
+import { ABOUT_URL, BLOG_URL, CONTACT_URL, SERVICES_URL } from '../utils/Routes'
 
 const Navbar = () => {
   return (
@@ -55,6 +55,10 @@ const Navbar = () => {
                                   
                                   <li>
                                     <Link to={SERVICES_URL}>Services</Link>
+                                  </li>
+                                  
+                                  <li>
+                                    <Link to={BLOG_URL}>Blog</Link>
                                   </li>
 
                                   {/* <!-- <li className="dropdown"><Link to="#">services</Link>

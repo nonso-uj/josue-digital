@@ -9,7 +9,8 @@ import MarketingPage from './pages/services/MarketingPage'
 import SalesPage from './pages/services/SalesPage'
 import NotFound from './components/NotFound'
 import BlogPage from './pages/BlogPage'
-import { ABOUT_URL, ACADEMY_URL, BLOG_URL, CONTACT_URL, MARKETING_URL, PORTFOLIO_URL, SALES_URL, SERVICES_URL } from './utils/Routes'
+import { ABOUT_URL, ACADEMY_URL, BLOG_POST_URL, BLOG_URL, CONTACT_URL, MARKETING_URL, PORTFOLIO_URL, SALES_URL, SERVICES_URL } from './utils/Routes'
+import SingleBlogPage from './pages/SingleBlogPage'
 // import Preloader from './components/Preloader'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path={CONTACT_URL} element={<ContactPage />} />
         <Route path={PORTFOLIO_URL} element={<PortfolioPage />} />
         <Route path={BLOG_URL} element={<BlogPage />} />
+        <Route path={BLOG_POST_URL} element={<SingleBlogPage />} />
         <Route path={SERVICES_URL} element={<ServicesPage />} />
         <Route path={ACADEMY_URL} element={<AcademyPage />} />
         <Route path={MARKETING_URL} element={<MarketingPage />} />
